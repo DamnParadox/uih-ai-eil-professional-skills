@@ -1,0 +1,4 @@
+interface:
+  display_name: "FMEA 专业评分"
+  short_description: "按现有三项独立标准评估产品问题，保存依据并支持持续对话局部修订"
+  default_prompt: "使用 $fmea-assessment 分析当前产品资料，并保存可继续修改的项目。"

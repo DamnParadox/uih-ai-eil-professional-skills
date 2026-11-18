@@ -1,0 +1,26 @@
+{
+  "package": "product-risk-professional-skills",
+  "version": 1,
+  "files": {
+    "agents/openai.yaml": "2e1479558a15379da03959c283032362290141f5e55e356db3cd46cb37bd49ac",
+    "references/feishu.md": "faf0a7808d5ae106da59f919357d84a7f9c3a6f62c04db82a19eae676abdb4d7",
+    "references/fmea-delivery.md": "8445d4343da81f66d9877df3540fc7dbc6afbf257515e23c898199638d084d31",
+    "references/occurrence.md": "3353525d66e835959b393ef870e2e1224493282cc4e6e944dc2de7d0f24fd698",
+    "references/product-profile.md": "f91f2fcab6a743325875d9f326b6dee9c0f5fab45f4ec0e7e7fc7499e370a70a",
+    "references/recovery.md": "4d3c5b153104059d4125369f94d3aa6bf6bd37bd2f45f971509c17b79bee44b2",
+    "references/severity.md": "159cae67d48758b26c5d0f70de62d9669789a7a55c5fd941bdd3eb2fc4335c4a",
+    "references/workspace.md": "97a77d43818fbfac66a12ef7a77f73c1ba00cb935517cde6241d17c080bba3bd",
+    "scripts/assistant.mjs": "135986ca4c93c6e64c41ea3db2cbe2074ab884a95ccdc9600c997f00c5fc9a72",
+    "scripts/fmea-base.mjs": "a73a57edc3e86d6954c282f0c42f9f3fefdda575c5e2468c4b7ab92940c8027f",
+    "scripts/fmea-input.mjs": "9d95f2d5fa5cfb1d16820cb682dc8a44581879fb1de37dc2d4ea733a4b3aee65",
+    "scripts/fmea-run.mjs": "1663bff5b63e51223bd443697e11c40c49a0185cf899c2b56af83ab32606e97f",
+    "scripts/fmea-score-store.mjs": "712a0134217b35807960aa2c1c85086975b9746c6f1cfeacfb78c1b20cf3ad85",
+    "scripts/lark-cli-runner.mjs": "26bc0fae4395140d95766a252f1126d46abfe50a36eea356714dfefdb9f3cd3a",
+    "scripts/tables.mjs": "f71b4d4744f5e66411d58cd159eb003da45b7ea961cd4db0c4de727a76079d99",
+    "scripts/vendor/errors.mjs": "67cede532bbb753e2e3ba5e5d97775df08001cf1f04d2a32fec237a296cf9930",
+    "scripts/vendor/final-score.mjs": "5b6a4ef786f837b6ea2879dee5d2a70fd84503c889b2e569aa1c45218204ba09",
+    "scripts/vendor/urra-measures-input.mjs": "41e5016bf530a38ecac2798e9ef01ef256d6834a232c5cee2505ac63b03dc05e",
+    "scripts/workspace.mjs": "1b8dd8c921d4ec275cebd68c6aa33a44111ec6db5f04f5984e2dfce399c5e903",
+    "SKILL.md": "eaed3bc197d7a28fa58a34fee2c4516f553416f48e4889b6474ba2a35a7bc3d0"
+  }
+}
