@@ -7,14 +7,19 @@
 | 技能 | 版本 | 用途 |
 |---|---|---|
 | [fmea-assessment](skills/fmea-assessment/SKILL.md) | 1.0.1 | 为产品使用问题评估风险危害、发生等级和预见感知恢复性，计算综合分并交付飞书 Base |
-
-后续技能将加入 `skills/` 下的独立目录。当前发布只包含 FMEA；URRA 任务分析与 URRA 措施尚未在本仓库发布。
+| [urra-task-analysis](skills/urra-task-analysis/SKILL.md) | 1.0.0 | 按产品使用目的分析关键任务、具体步骤、PCA、潜在使用错误和操作影响，可交付飞书表格并局部修订 |
 
 ## 一行安装
 
 先准备 Node.js 22.20.0 或更高版本（安装器要求），以及 Git。以下命令使用 [Vercel Labs skills](https://github.com/vercel-labs/skills)，固定安装器及本仓库发布版本。
 
-安装到 Codex，供当前用户的各项目使用：
+将 URRA 任务分析安装到 Codex，供当前用户的各项目使用。仓库标签为 `v1.1.0`，技能版本为 `1.0.0`。
+
+```sh
+npx --yes skills@1.9.0 add DamnParadox/uih-ai-eil-professional-skills@v1.1.0 --skill urra-task-analysis --agent codex --global --copy --yes
+```
+
+将 FMEA 评分安装到 Codex：
 
 ```sh
 npx --yes skills@1.9.0 add DamnParadox/uih-ai-eil-professional-skills@v1.0.1 --skill fmea-assessment --agent codex --global --copy --yes
@@ -46,7 +51,16 @@ gh skill install DamnParadox/uih-ai-eil-professional-skills fmea-assessment@v1.0
 
 一行命令安装的是技能及其配套脚本，不代替飞书 CLI 安装和授权。使用者需要在智能体实际执行命令的环境中安装官方 `lark-cli`，完成用户或应用身份接入，并具备目标文件的访问权限。授权和凭据不会随本仓库分发。
 
-打开新对话，选择 `fmea-assessment`，例如在 Codex 输入：
+打开新对话，可输入 `$urra-task-analysis` 并附上背景资料，也可使用以下两行触发任务分析。
+
+```text
+/URRA任务分析
+<飞书背景文档链接>
+```
+
+任务分析也可使用本地文字或可读附件。飞书表格包含主表和分析依据。需要修订时，提供已有项目目录并说明修改范围。
+
+使用 FMEA 评分时，在 Codex 输入：
 
 ```text
 $fmea-assessment
@@ -68,12 +82,18 @@ Claude Code 可用 `/fmea-assessment`；其他客户端也可通过技能菜单�
 - 64 项离线工程测试通过，并完成 8 个合成输入场景的行为检查；这些检查不代表专业判断准确率或所有平台均已验证。
 - 本工具辅助内部改进排序，综合分不用于判定医疗器械风险可接受性或证明控制措施有效。
 
-安装命令固定到 `v1.0.1`；未来升级时改用明确的新版本标签。发布 ZIP 和校验文件放在 [GitHub Releases](https://github.com/DamnParadox/uih-ai-eil-professional-skills/releases)。
+仓库 v1.1.0 加入 URRA 任务分析 v1.0.0。Windows 本地项目保存已验证文件占用后重试、快照与正文一致，以及归档中断后的恢复。发布 ZIP 和校验文件见 [GitHub Releases](https://github.com/DamnParadox/uih-ai-eil-professional-skills/releases)。
 
 ## 仓库结构
 
 ```text
 skills/
+  urra-task-analysis/
+    SKILL.md
+    agents/
+    references/
+    scripts/
+    package-manifest.json
   fmea-assessment/
     SKILL.md
     agents/

@@ -1,0 +1,4 @@
+interface:
+  display_name: "URRA 任务分析"
+  short_description: "从产品背景细化真实操作步骤、PCA、使用错误和操作影响并持续修订"
+  default_prompt: "使用 $urra-task-analysis 分析当前产品资料，并保存可继续修改的项目。"
