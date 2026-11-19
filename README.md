@@ -8,10 +8,17 @@
 |---|---|---|
 | [fmea-assessment](skills/fmea-assessment/SKILL.md) | 1.0.1 | 为产品使用问题评估风险危害、发生等级和预见感知恢复性，计算综合分并交付飞书 Base |
 | [urra-task-analysis](skills/urra-task-analysis/SKILL.md) | 1.0.0 | 按产品使用目的分析关键任务、具体步骤、PCA、潜在使用错误和操作影响，可交付飞书表格并局部修订 |
+| [urra-risk-controls](skills/urra-risk-controls/SKILL.md) | 1.0.0 | 将任务分析中的每条潜在使用错误展开为一条措施记录，说明危险情况、潜在伤害、严重程度及缓释建议 |
 
 ## 一行安装
 
 先准备 Node.js 22.20.0 或更高版本（安装器要求），以及 Git。以下命令使用 [Vercel Labs skills](https://github.com/vercel-labs/skills)，固定安装器及本仓库发布版本。
+
+将 **URRA 措施 v1.0.0** 安装到当前用户的 Codex。此命令固定使用仓库标签 `v1.2.0` 中的技能。
+
+```sh
+npx --yes skills@1.9.0 add https://github.com/DamnParadox/uih-ai-eil-professional-skills/tree/v1.2.0/skills/urra-risk-controls --skill urra-risk-controls --agent codex --global --copy --yes
+```
 
 将 URRA 任务分析安装到 Codex，供当前用户的各项目使用。仓库标签为 `v1.1.0`，技能版本为 `1.0.0`。
 
@@ -60,6 +67,13 @@ gh skill install DamnParadox/uih-ai-eil-professional-skills fmea-assessment@v1.0
 
 任务分析也可使用本地文字或可读附件。飞书表格包含主表和分析依据。需要修订时，提供已有项目目录并说明修改范围。
 
+使用 URRA 措施时，在新对话中输入以下两行。也可以指定 `$urra-risk-controls` 并附上任务分析表链接。结果包含六列主表和分析依据，每个使用错误一行，严重程度按建议措施实施前的可信健康伤害评定为 1～5 级。
+
+```text
+/URRA措施
+<飞书任务分析表链接>
+```
+
 使用 FMEA 评分时，在 Codex 输入：
 
 ```text
@@ -84,10 +98,18 @@ Claude Code 可用 `/fmea-assessment`；其他客户端也可通过技能菜单�
 
 仓库 v1.1.0 加入 URRA 任务分析 v1.0.0。Windows 本地项目保存已验证文件占用后重试、快照与正文一致，以及归档中断后的恢复。发布 ZIP 和校验文件见 [GitHub Releases](https://github.com/DamnParadox/uih-ai-eil-professional-skills/releases)。
 
+仓库 v1.2.0 加入 URRA 措施 v1.0.0。Windows / Codex 下通过 39 项本地工程回归，并用三条真实来源记录验证危险情况表述及六列导出。[下载技能 ZIP 与校验文件](https://github.com/DamnParadox/uih-ai-eil-professional-skills/releases/tag/v1.2.0)。
+
 ## 仓库结构
 
 ```text
 skills/
+  urra-risk-controls/
+    SKILL.md
+    agents/
+    references/
+    scripts/
+    package-manifest.json
   urra-task-analysis/
     SKILL.md
     agents/

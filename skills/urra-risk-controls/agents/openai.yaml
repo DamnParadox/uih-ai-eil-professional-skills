@@ -1,0 +1,4 @@
+interface:
+  display_name: "URRA 措施"
+  short_description: "逐条分析使用错误的危险情况、伤害、严重程度与具体措施并持续修订"
+  default_prompt: "使用 $urra-risk-controls 分析当前产品资料，并保存可继续修改的项目。"

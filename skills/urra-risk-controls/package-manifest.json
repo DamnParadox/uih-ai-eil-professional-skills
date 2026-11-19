@@ -1,0 +1,23 @@
+{
+  "package": "product-risk-professional-skills",
+  "version": 1,
+  "files": {
+    "agents/openai.yaml": "5fd0338015fc74fb7d5667c32cb3023f52e1130678ac25d2d624472b60bbaae2",
+    "references/feishu.md": "d101e6c82a1e4e6679f04c52c789c6eb00d5263e5d2d79d343b4471349615d8d",
+    "references/measures-run.md": "346113d104f429dd46bc0d3343fcfc7b459f114fe8c85781a4a9b73ccb8844a3",
+    "references/method.md": "7edfe3beced67179ee5823111398bfd4b5fe0ea1a4602a85a11ef7eb2d177820",
+    "references/workspace.md": "ebdfd2cec9452e549d2b1ca766320690d27637922d178f26be879d2750e260b0",
+    "scripts/assistant.mjs": "135986ca4c93c6e64c41ea3db2cbe2074ab884a95ccdc9600c997f00c5fc9a72",
+    "scripts/fmea-base.mjs": "a73a57edc3e86d6954c282f0c42f9f3fefdda575c5e2468c4b7ab92940c8027f",
+    "scripts/lark-cli-runner.mjs": "26bc0fae4395140d95766a252f1126d46abfe50a36eea356714dfefdb9f3cd3a",
+    "scripts/measures-input.mjs": "8c2b8693f76a8024aae96a47a9d41fd60d9e7e377ee916a77ca1f58a0fcb12c7",
+    "scripts/measures-run.mjs": "de715d1f515db87caf91bc4821a4c34f63dfdcabc98a936263e2fdd9c9902ef1",
+    "scripts/sheets-delivery.mjs": "c5908b8a3cd252c65dcc0920d06320ac55233d6b97aafb666caff9e27043cc81",
+    "scripts/tables.mjs": "2b035b8de692ef58e62fc2c14fa1c787c70eec90357c3a3613cfe23abd2b50b7",
+    "scripts/vendor/errors.mjs": "67cede532bbb753e2e3ba5e5d97775df08001cf1f04d2a32fec237a296cf9930",
+    "scripts/vendor/final-score.mjs": "5b6a4ef786f837b6ea2879dee5d2a70fd84503c889b2e569aa1c45218204ba09",
+    "scripts/vendor/urra-measures-input.mjs": "41e5016bf530a38ecac2798e9ef01ef256d6834a232c5cee2505ac63b03dc05e",
+    "scripts/workspace.mjs": "e723d5cd3b5f2735b697a68c1947392e6ff123ca90e0396770475d7888f88dd1",
+    "SKILL.md": "841a2b073138abeb9cd4bbbd6e486f8abff2a4697cee969a433f62ac545606b7"
+  }
+}

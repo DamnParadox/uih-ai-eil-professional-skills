@@ -1,2 +1,3 @@
 # Keep the URRA release payload byte-identical to its SHA-256 manifest.
 skills/urra-task-analysis/** -text
+skills/urra-risk-controls/** -text
